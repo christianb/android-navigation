@@ -14,11 +14,13 @@ buildscript {
         classpath Libs.com_android_tools_build_gradle
         classpath Libs.kotlin_gradle_plugin
         classpath Libs.de_fayard_buildsrcversions_gradle_plugin
+        classpath Libs.detekt_gradle_plugin
     }
 }
 
 apply from: './common-def.gradle'
 apply plugin: "de.fayard.buildSrcVersions"
+apply from: './detekt.gradle'
 
 allprojects {
     repositories {

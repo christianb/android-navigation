@@ -52,4 +52,3 @@ class NavigationLiveDataTest {
 		return ControllableLifeCycle().apply { setState(Lifecycle.State.RESUMED) }
 	}
 }
-

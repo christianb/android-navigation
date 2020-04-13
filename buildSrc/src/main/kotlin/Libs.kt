@@ -7,15 +7,15 @@ import kotlin.String
  *   `$ ./gradlew buildSrcVersions`
  */
 object Libs {
-  const val de_fayard_buildsrcversions_gradle_plugin: String =
-      "de.fayard.buildSrcVersions:de.fayard.buildSrcVersions.gradle.plugin:" +
-      Versions.de_fayard_buildsrcversions_gradle_plugin
+  /**
+   * https://developer.android.com/topic/libraries/architecture/index.html
+   */
+  const val core_testing: String = "androidx.arch.core:core-testing:" + Versions.core_testing
 
   /**
-   * https://developer.android.com/studio
+   * https://developer.android.com/jetpack/androidx
    */
-  const val com_android_tools_build_gradle: String = "com.android.tools.build:gradle:" +
-      Versions.com_android_tools_build_gradle
+  const val core_ktx: String = "androidx.core:core-ktx:" + Versions.core_ktx
 
   /**
    * https://developer.android.com/topic/libraries/architecture/index.html
@@ -26,8 +26,82 @@ object Libs {
   /**
    * https://developer.android.com/testing
    */
+  const val espresso_core: String = "androidx.test.espresso:espresso-core:" + Versions.espresso_core
+
+  /**
+   * https://developer.android.com/testing
+   */
   const val androidx_test_ext_junit: String = "androidx.test.ext:junit:" +
       Versions.androidx_test_ext_junit
+
+  /**
+   * https://developer.android.com/studio
+   */
+  const val aapt2: String = "com.android.tools.build:aapt2:" + Versions.aapt2
+
+  /**
+   * https://developer.android.com/studio
+   */
+  const val com_android_tools_build_gradle: String = "com.android.tools.build:gradle:" +
+      Versions.com_android_tools_build_gradle
+
+  /**
+   * https://developer.android.com/studio
+   */
+  const val lint_gradle: String = "com.android.tools.lint:lint-gradle:" + Versions.lint_gradle
+
+  /**
+   * https://github.com/JakeWharton/timber
+   */
+  const val timber: String = "com.jakewharton.timber:timber:" + Versions.timber
+
+  /**
+   * https://github.com/sensorberg-dev/event
+   */
+  const val event: String = "com.sensorberg.libs:event:" + Versions.event
+
+  /**
+   * https://github.com/vanniktech/gradle-maven-publish-plugin/
+   */
+  const val gradle_maven_publish_plugin: String = "com.vanniktech:gradle-maven-publish-plugin:" +
+      Versions.gradle_maven_publish_plugin
+
+  const val de_fayard_buildsrcversions_gradle_plugin: String =
+      "de.fayard.buildSrcVersions:de.fayard.buildSrcVersions.gradle.plugin:" +
+      Versions.de_fayard_buildsrcversions_gradle_plugin
+
+  /**
+   * https://arturbosch.github.io/detekt
+   */
+  const val detekt_cli: String = "io.gitlab.arturbosch.detekt:detekt-cli:" +
+      Versions.io_gitlab_arturbosch_detekt
+
+  /**
+   * https://arturbosch.github.io/detekt
+   */
+  const val detekt_formatting: String = "io.gitlab.arturbosch.detekt:detekt-formatting:" +
+      Versions.io_gitlab_arturbosch_detekt
+
+  /**
+   * https://arturbosch.github.io/detekt
+   */
+  const val detekt_gradle_plugin: String = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:" +
+      Versions.io_gitlab_arturbosch_detekt
+
+  /**
+   * http://mockk.io
+   */
+  const val mockk: String = "io.mockk:mockk:" + Versions.mockk
+
+  /**
+   * http://junit.org
+   */
+  const val junit_junit: String = "junit:junit:" + Versions.junit_junit
+
+  /**
+   * http://assertj.org
+   */
+  const val assertj_core: String = "org.assertj:assertj-core:" + Versions.assertj_core
 
   /**
    * https://kotlinlang.org/
@@ -52,51 +126,4 @@ object Libs {
    */
   const val kotlin_stdlib_jdk7: String = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:" +
       Versions.org_jetbrains_kotlin
-
-  /**
-   * https://developer.android.com/testing
-   */
-  const val espresso_core: String = "androidx.test.espresso:espresso-core:" + Versions.espresso_core
-
-  /**
-   * https://developer.android.com/topic/libraries/architecture/index.html
-   */
-  const val core_testing: String = "androidx.arch.core:core-testing:" + Versions.core_testing
-
-  /**
-   * http://assertj.org
-   */
-  const val assertj_core: String = "org.assertj:assertj-core:" + Versions.assertj_core
-
-  /**
-   * https://developer.android.com/studio
-   */
-  const val lint_gradle: String = "com.android.tools.lint:lint-gradle:" + Versions.lint_gradle
-
-  /**
-   * http://junit.org
-   */
-  const val junit_junit: String = "junit:junit:" + Versions.junit_junit
-
-  /**
-   * https://developer.android.com/jetpack/androidx
-   */
-  const val core_ktx: String = "androidx.core:core-ktx:" + Versions.core_ktx
-
-  /**
-   * https://github.com/JakeWharton/timber
-   */
-  const val timber: String = "com.jakewharton.timber:timber:" + Versions.timber
-
-  /**
-   * https://developer.android.com/studio
-   */
-  const val aapt2: String = "com.android.tools.build:aapt2:" + Versions.aapt2
-
-  const val event: String = "com.sensorberg.libs:event:" + Versions.event
-
-  /**
-   * http://mockk.io
-   */
-  const val mockk: String = "io.mockk:mockk:" + Versions.mockk
 }
