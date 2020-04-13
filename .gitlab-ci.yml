@@ -1,4 +1,4 @@
-image: bitriseio/docker-android:v2019_11_09-08_04-b1834
+image: bitriseio/docker-android:v2020_02_15-08_05-b1936
 # you can find latest docker image at https://hub.docker.com/r/bitriseio/docker-android/tags
 # to ensure backward compatability we should always use a concrete docker image version and NOT latest!
 
@@ -44,5 +44,5 @@ deploy_release:
     - tags
   script:
     # build
-    - ./gradlew clean testReleaseUnitTest lintRelease assembleRelease assembleAndroidTest
+    - ./gradlew clean testReleaseUnitTest assembleRelease assembleAndroidTest
     - ./gradlew uploadArchives
