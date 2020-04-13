@@ -1,7 +1,7 @@
 # Navigation
 This library helps you making android navigation more handy and better testable.
 
-The `Navigationable` interface could be implementend by a `ViewModel`.
+The `Navigationable` interface could be implemented by a `ViewModel`.
 ```
 class MyViewModel: ViewModel(), Navigationable {
     override val navigator: Navigator = Navigator.create()
@@ -27,4 +27,8 @@ class MyFragment : Fragment() {
 }
 ```
 
-Thats it. No more configuration. The observation of the `Navigator` happens inside the `setupNavigation()` method.
+That's it. No more configuration. The observation of the `Navigator` happens inside the `setupNavigation()` method.
+
+## Contributors
+* [Christian Bunk](https://github.com/christianb)
+* [Ronaldo Pace](https://github.com/budius)
