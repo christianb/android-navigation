@@ -1,2 +1,2 @@
-rootProject.name='navigation'
-include ':app'
+rootProject.name='Navigation'
+include ':navigation'
