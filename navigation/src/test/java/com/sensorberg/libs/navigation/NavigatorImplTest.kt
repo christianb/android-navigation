@@ -11,15 +11,15 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 
-class NavigationLiveDataTest {
+class NavigatorImplTest {
 
 	@get:Rule val instantExecutorRule = InstantTaskExecutorRule()
 
-	private lateinit var classUnderTest: NavigationLiveData
+	private lateinit var classUnderTest: NavigatorImpl
 
 	@Before
 	fun setUp() {
-		classUnderTest = NavigationLiveData()
+		classUnderTest = NavigatorImpl()
 	}
 
 	@Test

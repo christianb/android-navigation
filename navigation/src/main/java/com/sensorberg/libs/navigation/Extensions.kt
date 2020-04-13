@@ -5,8 +5,11 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import timber.log.Timber
 
+/**
+ * Observes a [Navigator] from a [Navigationable] interface and executes navigation.
+ */
 fun Fragment.setupNavigation(navigationable: Navigationable) {
-	navigationable.navigationLiveData.observe(viewLifecycleOwner, Observer {
+	navigationable.navigator.observe(viewLifecycleOwner, Observer {
 		when (val navigation: Navigation? = it.getOrNull()) {
 			Navigation.Up -> findNavController().navigateUp()
 			is Navigation.Direction -> findNavController().navigate(navigation.navDirections)
